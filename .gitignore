@@ -1,23 +1,21 @@
-# Các file dataset
+
+data/**/*
+
+# Ngoại lệ: Cho phép đẩy cấu trúc thư mục lên nếu có file .gitkeep
+!data/**/.gitkeep
+
+# Chặn cụ thể các định dạng nặng
 *.csv
-*.pcap
-data/
-datasets/
-
-# Các file mô hình đã train 
 *.h5
-*.pth
-*.pkl
-models/
+*.keras
 
-# Thư mục môi trường ảo và Cache của Python
+#  PYTHON & CACHE
 __pycache__/
 .ipynb_checkpoints/
-venv/
-env/
-.env
+*.py[cod]
+*$py.class
 
-# File hệ thống và IDE
+# IDE & SYSTEM 
 .vscode/
 .idea/
-*.log
+.env
