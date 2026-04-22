@@ -1,0 +1,23 @@
+# Các file dataset
+*.csv
+*.pcap
+data/
+datasets/
+
+# Các file mô hình đã train 
+*.h5
+*.pth
+*.pkl
+models/
+
+# Thư mục môi trường ảo và Cache của Python
+__pycache__/
+.ipynb_checkpoints/
+venv/
+env/
+.env
+
+# File hệ thống và IDE
+.vscode/
+.idea/
+*.log
