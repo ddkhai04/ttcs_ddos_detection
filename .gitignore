@@ -1,21 +1,28 @@
 
+# Chặn toàn bộ nội dung trong thư mục data
 data/**/*
 
-# Ngoại lệ: Cho phép đẩy cấu trúc thư mục lên nếu có file .gitkeep
+# Mở cửa cho phép Git đi vào các thư mục con
+!data/**/
+
+#  Cho phép đẩy file .gitkeep để giữ cấu trúc thư mục rỗng
 !data/**/.gitkeep
 
-# Chặn cụ thể các định dạng nặng
+# Cho phép đẩy file .zip
+!data/**/*.zip
+
+# chặn những file nặng
 *.csv
 *.h5
 *.keras
 
-#  PYTHON & CACHE
+# --- PYTHON & CACHE ---
 __pycache__/
 .ipynb_checkpoints/
 *.py[cod]
 *$py.class
 
-# IDE & SYSTEM 
+# --- IDE & SYSTEM ---
 .vscode/
 .idea/
 .env
